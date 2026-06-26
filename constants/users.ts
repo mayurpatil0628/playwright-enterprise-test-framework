@@ -1,30 +1,47 @@
 
-export const standard_user = {
-    username: "standard_user",
-    password: "secret_sauce"
-}
-
-export const locked_out_user = {
-    username: "locked_out_user",
-    password: "secret_sauce"
-}
-
-export const problem_user = {
-    username: "problem_user",
-    password: "secret_sauce"
-}
-
-export const performance_glitch_user = {
-    username: "performance_glitch_user",
-    password: "secret_sauce"
-}
-
-export const error_user = {
-    username: "error_user",
-    password: "secret_sauce"
-}
-
-export const visual_user = {
-    username: "visual_user",
-    password: "secret_sauce"
+export const USERS = {
+    STANDARD: {
+        username: "standard_user",
+        password: "secret_sauce"
+    },
+    LOCKED: {
+        username: "locked_out_user",
+        password: "secret_sauce"
+    },
+    PROBLEM: {
+        username: "problem_user",
+        password: "secret_sauce"
+    },
+    PERFORMANCE_GLITCH: {
+        username: "performance_glitch_user",
+        password: "secret_sauce"
+    },
+    ERROR: {
+        username: "error_user",
+        password: "secret_sauce"
+    },
+    VISUAL: {
+        username: "visual_user",
+        password: "secret_sauce"
+    },
+    EMPTY_CREDS: {
+        username: "",
+        password: ""
+    },
+    EMPTY_USERNAME: {
+        username: "",
+        password: "secret_sauce"
+    },
+    EMPTY_PASSWORD: {
+        username: "standard_user",
+        password: ""
+    },
+    INVALID_USERNAME: {
+        username: "invalid_user",
+        password: "secret_sauce"
+    },
+    INVALID_PASSWORD: {
+        username: "standard_user",
+        password: "invalid_password"
+    },
 }
