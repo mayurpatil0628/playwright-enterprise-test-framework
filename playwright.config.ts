@@ -18,7 +18,7 @@ export default defineConfig({
 
     testIdAttribute: 'data-test',
 
-    headless: false,
+    headless: true,
 
     screenshot: 'only-on-failure',
 
