@@ -12,7 +12,7 @@ test.describe('Login Functionality', () => {
         await page.goto('/');
     });
 
-    test('Verify successful login', async ({ loginPage, page }) => {
+    test('@smoke Verify successful login', async ({ loginPage, page }) => {
         await loginPage.loginToApplication(USERS.STANDARD);
         await expect(page).toHaveURL(/inventory/);
     });
