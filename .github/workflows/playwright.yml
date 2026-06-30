@@ -42,7 +42,7 @@ jobs:
     
     - name: Run Regression Tests 
       if: ${{ github.event_name != 'pull_request' }} 
-      run: npx playwright test 
+      run: npx playwright test --grep "@regression"
 
     - name: Generate Allure Report 
       if: always() 
