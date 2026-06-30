@@ -7,7 +7,7 @@ test.describe('Login Functionality', () => {
         await page.goto('/');
     });
 
-    test('@smoke Verify successful login', async ({ loginPage, page }) => {
+    test('Verify successful login', { tag: ['@smoke'] }, async ({ loginPage, page }) => {
         await loginPage.loginToApplication(USERS.STANDARD);
         await expect(page).toHaveURL(/inventory/);
     });

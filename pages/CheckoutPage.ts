@@ -28,7 +28,7 @@ export class CheckoutPage {
         await this.continueBtn.click();
     }
 
-    async validateOrderCompleteStatus() {
+    async orderSuccessMessage() {
         await this.finishBtn.click();
         return await this.orderComplitionMsg.innerText();
     }
